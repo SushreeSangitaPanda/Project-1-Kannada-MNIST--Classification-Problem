@@ -1,11 +1,15 @@
 # Project-1-Kannada-MNIST--Classification-Problem
 Problem Statement: This is an extension of clasic MNIST classification problem. Instead of using Hindu numerals, lets use a recently-released dataset of Kannada digits. This is a 10 Class classification problem.
-A step-by-step explanation of the code for the classification problem using Kannada MNIST dataset and generating various visualizations:
+# Data :
+The dataset used in the project is from Kaggle.
+Dataset can be downloaded from the link : https://www.kaggle.com/datasets/higgstachyon/
+kannada-mnist.
+## A step-by-step explanation of the code for the classification problem using Kannada MNIST dataset and generating various visualizations:
 1. Import the required libraries:
    - The necessary libraries are imported to perform the classification task, including numpy, matplotlib, seaborn, sklearn, yellowbrick, and PdfPages.
 
 2. Load the dataset:
-   - The dataset is loaded from the .npz file using numpy's `load()` function. The training and testing data along with their respective labels are assigned to variables.
+   - The dataset is loaded from the .npz file using numpy's 'load()' function. The training and testing data along with their respective labels are assigned to variables.
 
 3. Define helper functions:
    - Two helper functions are defined:
@@ -29,6 +33,7 @@ A step-by-step explanation of the code for the classification problem using Kann
    - All the individual PDF files are combined into a single PDF file named "classification_results.pdf".
    - A PdfPages object is created to write the combined PDF file.
    - For each individual PDF file, the pages are extracted and saved into the combined PDF file.
-
+   - 
+# Conclusion
 This code performs the classification problem on the Kannada MNIST dataset, generates various visualizations, and saves them into PDF files for each component size. Finally, it combines all the individual PDF files into a single PDF file for easy reference.
 Make sure to adjust the filename and paths according to your specific requirements and have the necessary packages installed.
