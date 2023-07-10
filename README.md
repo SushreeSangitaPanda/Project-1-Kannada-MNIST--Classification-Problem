@@ -9,20 +9,20 @@ kannada-mnist.
    - The necessary libraries are imported to perform the classification task, including numpy, matplotlib, seaborn, sklearn, yellowbrick, and PdfPages.
 
 2. Load the dataset:
-   - The dataset is loaded from the .npz file using numpy's 'load()' function. The training and testing data along with their respective labels are assigned to variables.
+   - The dataset is loaded from the .npz file using numpy's `load()` function. The training and testing data along with their respective labels are assigned to variables.
 
 3. Define helper functions:
    - Two helper functions are defined:
-     - 'generate_metrics_bar_chart()': This function takes model name, precision, recall, and F1-score as inputs and generates a bar chart visualization using matplotlib to represent these metrics.
-     - 'generate_confusion_matrix_heatmap()': This function generates a confusion matrix heatmap using the Yellowbrick library for a given model, input data, and labels.
+     - `generate_metrics_bar_chart()`: This function takes model name, precision, recall, and F1-score as inputs and generates a bar chart visualization using matplotlib to represent these metrics.
+     - `generate_confusion_matrix_heatmap()`: This function generates a confusion matrix heatmap using the Yellowbrick library for a given model, input data, and labels.
 
 4. Perform PCA and evaluate models:
    - A list of component sizes is defined.
    - A loop is executed for each component size:
      - The images are flattened, and PCA is performed using the specified component size.
      - Each model (Decision Trees, Random Forest, Naive Bayes, KNN, SVM) is trained and evaluated using the transformed data.
-     - Classification metrics (precision, recall, F1-score) are computed for each model and displayed using the 'generate_metrics_bar_chart()' function.
-     - A confusion matrix heatmap is generated for each model using the 'generate_confusion_matrix_heatmap()' function.
+     - Classification metrics (precision, recall, F1-score) are computed for each model and displayed using the `generate_metrics_bar_chart()` function.
+     - A confusion matrix heatmap is generated for each model using the `generate_confusion_matrix_heatmap()` function.
      - RoC - AUC curves are plotted for each model using the Yellowbrick library.
 
 5. Save metrics, confusion matrix, and RoC - AUC curve to PDF files:
